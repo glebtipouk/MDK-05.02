@@ -1,0 +1,123 @@
+object Form1: TForm1
+  Left = 263
+  Height = 258
+  Top = 559
+  Width = 812
+  Caption = 'Form1'
+  ClientHeight = 258
+  ClientWidth = 812
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  LCLVersion = '4.6.0.0'
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 258
+    Top = 0
+    Width = 812
+    Align = alClient
+    ColCount = 6
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect, goSmoothScroll]
+    RowCount = 2
+    TabOrder = 0
+    ColWidths = (
+      37
+      177
+      191
+      187
+      80
+      99
+    )
+    Cells = (
+      6
+      0
+      0
+      '№'
+      1
+      0
+      'ФИО'
+      2
+      0
+      'Группа'
+      3
+      0
+      'Предмет'
+      4
+      0
+      'Оценка'
+      5
+      0
+      ' Дата сдачи'
+    )
+  end
+  object MainMenu1: TMainMenu
+    Left = 56
+    Top = 136
+    object MenuItem2: TMenuItem
+      Caption = 'Файл'
+      object MenuItem7: TMenuItem
+        Caption = 'Создать'
+        OnClick = MenuItem7Click
+      end
+      object MenuItem8: TMenuItem
+        Caption = 'Открыть файл'
+        OnClick = MenuItem8Click
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Сохранить'
+      end
+      object MenuItem10: TMenuItem
+        Caption = 'Сохранить как'
+      end
+      object MenuItem11: TMenuItem
+        Caption = 'Выход'
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Запись'
+      object MenuItem12: TMenuItem
+        Caption = 'Добавить запись'
+        OnClick = MenuItem12Click
+      end
+      object MenuItem13: TMenuItem
+        Caption = 'Редактировать запись'
+        OnClick = MenuItem13Click
+      end
+      object MenuItem14: TMenuItem
+        Caption = 'Удалить запись'
+        OnClick = MenuItem14Click
+      end
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Сортировка'
+      object MenuItem15: TMenuItem
+        Caption = 'По возрастанию'
+        OnClick = MenuItem15Click
+      end
+      object MenuItem16: TMenuItem
+        Caption = 'По убыванию'
+      end
+    end
+    object MenuItem5: TMenuItem
+      Caption = 'Найти'
+      object MenuItem17: TMenuItem
+        Caption = 'Найти запись'
+      end
+    end
+    object MenuItem6: TMenuItem
+      Caption = 'Очистить'
+      object MenuItem18: TMenuItem
+        Caption = 'Очистить таблицу'
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'Типизированные файлы|*.dat'
+    Left = 163
+    Top = 139
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = 'Типизированные файлы|*.dat'
+    Left = 256
+    Top = 148
+  end
+end
